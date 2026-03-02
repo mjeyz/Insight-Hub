@@ -1,8 +1,128 @@
-.nav-link {
-    font-weight: bold;
-    color: white;
-}
+/* modern custom styles — clean, soft, with Arabic elegance */
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      background: #f9fbfa;
+      scroll-behavior: smooth;
+    }
+    /* arabic font for the verse */
+    .arabic-display {
+      font-family: 'Amiri', 'Traditional Arabic', serif;
+      font-size: 2.2rem;
+      line-height: 1.6;
+      font-weight: 700;
+      color: #1e3c2c;
+      text-shadow: 0 2px 4px rgba(0,40,10,0.08);
+    }
+    .subheading {
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: #2b4b35;
+      letter-spacing: 0.3px;
+    }
+    /* navbar refinement */
+    #mainNav {
+      background: linear-gradient(135deg, #6ec475 0%, #479e5a 100%) !important;
+      box-shadow: 0 8px 20px rgba(0,60,20,0.12);
+      padding-block: 0.5rem;
+    }
+    #mainNav .navbar-nav .nav-link {
+      color: white !important;
+      font-weight: 500;
+      padding: 0.6rem 1.2rem !important;
+      border-radius: 40px;
+      transition: all 0.2s ease;
+    }
+    #mainNav .navbar-nav .nav-link:hover {
+      background-color: rgba(255,255,255,0.2);
+      transform: translateY(-1px);
+    }
+    .navbar-brand img {
+      filter: drop-shadow(0 4px 4px rgba(0,40,0,0.2));
+      transition: transform 0.2s;
+    }
+    .navbar-brand img:hover { transform: scale(1.02); }
+    /* header / masthead */
+    .masthead {
+      background: linear-gradient(145deg, #eaf7ec 0%, #d3ecd7 100%);
+      padding: 4rem 0 5rem;
+      border-bottom-left-radius: 3rem;
+      border-bottom-right-radius: 3rem;
+      box-shadow: 0 10px 30px rgba(50,90,60,0.15);
+      margin-bottom: 2.5rem;
+    }
+    .page-heading h2 {
+      font-size: 2.6rem;
+      margin-bottom: 0.5rem;
+    }
+    /* content cards */
+    .feature-card {
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(130,190,130,0.3);
+      border-radius: 2rem;
+      padding: 1.8rem 1.2rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 15px 30px -10px rgba(30,80,40,0.15);
+      height: 100%;
+    }
+    .feature-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 35px -10px #2f5a3a4D;
+      border-color: #8fc99e;
+    }
+    .feature-icon {
+      font-size: 2.8rem;
+      color: #2f7e44;
+      margin-bottom: 1rem;
+    }
+    .card-title {
+      font-weight: 600;
+      color: #1d4e2b;
+      letter-spacing: -0.02em;
+    }
+    .prayer-summary {
+      background: white;
+      border-radius: 2rem;
+      padding: 1.2rem 1.8rem;
+      box-shadow: inset 0 1px 5px rgba(0,0,0,0.02), 0 10px 20px -5px #b0dbb7;
+    }
+    .prayer-item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed #c4e0cb;
+      padding: 0.5rem 0;
+      font-weight: 500;
+    }
+    .prayer-item:last-child { border-bottom: none; }
+    .prayer-name { color: #215732; }
+    .prayer-time { color: #0b3b1a; font-weight: 600; }
 
-#carouselExampleDark .carousel-item img{
-    height: 500px;
-}
+    /* footer modern */
+    .footer-custom {
+      background-color: #edf6ef;
+      border-top: 1px solid #c4ddcb !important;
+      border-radius: 3rem 3rem 0 0;
+      padding-top: 2rem;
+      margin-top: 4rem;
+      color: #346d41;
+    }
+    .footer-custom a {
+      color: #3e7249;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .footer-custom a:hover {
+      color: #175a27;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    .footer-logo {
+      font-size: 1.8rem;
+      font-weight: 600;
+      background: linear-gradient(135deg, #3e8d4a, #1c6b2b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
